@@ -1,239 +1,163 @@
-# Bird Tricks Academy - Lesson Player Template
+# Bird Tricks Academy - Stay Command Training
 
-## 🦜 Overview
+## 🦜 Clean Training Template
 
-Clean, reusable template for online bird training lessons. Features:
-- ✅ Progressive level unlocking (Basic → Intermediate → Advanced)
-- ✅ Animated companion (Ranger Taila with cute eyes)
-- ✅ Step-by-step instruction flow
-- ✅ Image display for each step
-- ✅ Reward system with bouncing bubbles
-- ✅ Sound effects (bubbling, bouncing)
-- ✅ Progress tracking with localStorage
-- ✅ Mobile responsive
+Streamlined lesson player for bird training with generated illustrations.
 
-## 📁 Files Included
+## ✨ Features
 
-- `index.html` - Main page structure
-- `styles.css` - All styling
-- `app.js` - Complete functionality
+- ✅ Step-by-step training progression
+- ✅ Auto-generated illustrations for each stage
+- ✅ Speech bubble with typing animation
+- ✅ Progress tracking
+- ✅ Hint system
+- ✅ Clean, distraction-free interface
+
+## 📁 Files
+
+- `index.html` - Main page
+- `styles.css` - Styling
+- `app.js` - Logic + illustration generation
+- `stay_training.json` - Stay command lesson (14 steps)
 - `rangerTaila.webp` - Companion image
-- `trick_001.json` - Sample lesson (Target Training)
-- `README.md` - This file
 
-## 🎨 Customization
+## 🎨 How It Works
 
-### Change Branding
+### Illustrations
+Each step automatically generates a custom illustration showing:
+- **Stage 1**: Bird on perch + hand showing "Stay" + 1 sec timer
+- **Stage 2**: Bird + hand + duration timer (3s, 5s, 8s, 15s)
+- **Stage 3**: Bird + person at distance + arrow showing movement
+- **Stage 4**: Bird + distractions (waving hand, motion lines)
+- **Stage 5**: Bird + person far away + long timer (30-60s)
 
-**Edit `index.html`:**
-```html
-<div class="brand-kicker">YOUR COMPANY NAME</div>
-<div class="brand-title">Your Academy Name</div>
-```
+### Navigation
+- **Next →** - Advance to next step
+- **← Back** - Return to previous step
+- **Hint** - Show training tip
+- **Restart** - Go back to Step 1
 
-**Edit `styles.css`:**
-```css
-:root{
-  --accent:#8b4513;  /* Your brand color */
-}
-```
-
-### Change Companion Image
-
-Replace `rangerTaila.webp` with your image, or update `index.html`:
-```html
-<img id="companionImage" src="your-image.jpg" />
-```
-
-### Adjust Eye Position
-
-Edit `styles.css`:
-```css
-.eyes-container{
-  top: 15%;  /* Adjust vertical position */
-  /* Change based on your image */
-}
-```
-
-## 📝 Creating Lessons
-
-### Lesson JSON Structure
+## 📝 Lesson Format
 
 ```json
 {
-  "title": "Your Trick Name",
-  "steps_basic": [
+  "title": "Lesson Name",
+  "steps": [
     {
-      "title": "Step title",
-      "instruction": "What the user should do",
-      "hint": "Helpful tip if they're stuck",
-      "image": "path/to/image.jpg"
+      "stage": 1,
+      "title": "Stage title",
+      "instruction": "Training instructions",
+      "hint": "Helpful tip",
+      "duration": "5 sec"  // Optional, for timers
     }
-  ],
-  "steps_intermediate": [...],
-  "steps_advanced": [...]
+  ]
 }
 ```
 
-### Level Naming
+## 🎯 Creating New Lessons
 
-Template uses three levels:
-- `steps_basic` - Beginner level
-- `steps_intermediate` - Medium level  
-- `steps_advanced` - Expert level
+1. **Copy** `stay_training.json`
+2. **Rename** to `your_lesson.json`
+3. **Edit** steps (keep stage 1-5 for illustrations)
+4. **Update** `app.js` line 20: `await fetch("your_lesson.json")`
 
-You can rename these in the HTML dropdown if needed.
+## 🎨 Customization
 
-## 🖼️ Adding Images
+### Change Companion Image
+Replace `rangerTaila.webp` with your image
 
-### Option 1: Local Images
-1. Put images in same folder as lesson files
-2. Reference in JSON: `"image": "step1.jpg"`
-
-### Option 2: External URLs
-```json
-"image": "https://yourdomain.com/images/step1.jpg"
+### Change Colors
+Edit `styles.css` `:root` section:
+```css
+--primary:#2477c9;  /* Blue buttons */
+--accent:#8b4513;   /* Brown accents */
 ```
 
-### Option 3: No Images
-Leave blank for text-only steps:
-```json
-"image": ""
+### Adjust Illustrations
+Edit drawing functions in `app.js`:
+- `drawBird()` - Bird appearance
+- `drawPerch()` - Perch style
+- `drawHand()` - Hand gesture
+- `drawPerson()` - Trainer figure
+
+### Add New Stage Illustrations
+Add case in `drawIllustration()`:
+```javascript
+else if(stage === 6){
+  // Your custom drawing code
+}
 ```
 
 ## 🚀 Deployment
 
-### GitHub Pages (Free)
-1. Create GitHub repository
-2. Upload all files to repository root
-3. Settings → Pages → Deploy from main branch
-4. Access: `https://username.github.io/repo-name/?lesson=trick_001`
+### Option 1: Local
+Just open `index.html` in browser
 
-### Custom Domain
-Point your domain to GitHub Pages or host on your own server.
+### Option 2: GitHub Pages
+1. Upload all files to GitHub repo
+2. Enable Pages in Settings
+3. Access at: `username.github.io/repo/`
 
-## 🔗 URL Parameters
+### Option 3: Web Server
+Upload all files to web hosting root directory
 
-Access lessons via URL parameter:
-```
-https://yoursite.com/?lesson=trick_001
-https://yoursite.com/?lesson=trick_002
-```
+## 🔧 Technical Details
 
-The `?lesson=` parameter loads the corresponding JSON file.
+### Canvas Illustrations
+- Size: 600×400px
+- Auto-scales to container
+- Redraws on each step
+- All vector graphics (no image files needed)
 
-## 💾 Progress Tracking
+### Progress Tracking
+- Saves current step
+- Shows progress bar
+- Persists across sessions
 
-Progress is saved in browser localStorage:
-- Current step per level
-- Unlocked levels
-- Completed levels
-- Reward balls earned
-
-Clearing browser data resets progress.
-
-## 🎮 Features Explained
-
-### Progressive Unlocking
-1. Start at Basic level
-2. Complete all steps → unlock Intermediate
-3. Complete Intermediate → unlock Advanced
-4. Use dropdown to switch between unlocked levels
-
-### Reward System
-- Complete a level → bouncing ball reward appears
-- Balls have physics (bounce, collide)
-- Sound effects on bounce
-- Restart clears all rewards
-
-### Eyes Animation
-- Happy eyes when idle
-- Thinking eyes when typing
-- Pupils dart around when processing
-
-## 🎨 Styling Tips
-
-### Change Colors
-Edit `:root` variables in `styles.css`:
-```css
-:root{
-  --primary:#2477c9;  /* Button color */
-  --accent:#8b4513;   /* Brand accent */
-  --border:#dbe6f2;   /* Border color */
-}
-```
-
-### Adjust Layout
-- Left panel: Companion and speech bubble
-- Right panel: Steps and images
-- Grid adjusts automatically on mobile
-
-### Customize Bubble
-```css
-.bubble{
-  border: 3px solid var(--accent);  /* Border color */
-  border-radius: 18px;               /* Roundness */
-}
-```
+### Typing Animation
+- 12ms per character
+- Can be interrupted
+- Smooth natural flow
 
 ## 📱 Mobile Responsive
 
-Template automatically stacks on small screens:
 - Desktop: Side-by-side layout
-- Mobile: Stacked layout (companion on top)
+- Mobile: Stacked layout
+- Canvas scales automatically
 
-## 🔧 Advanced Customization
+## 🎓 Training Stages Included
 
-### Add More Levels
-1. Add option to `<select>` in HTML
-2. Add `steps_expert` (or your name) to JSON
-3. Update level logic in `getCurrentSteps()` function
+- **Stage 1**: Zero Duration (Days 1-2)
+- **Stage 2**: Build Duration 3-15s (Days 3-5)
+- **Stage 3**: Add Distance (Days 6-8)
+- **Stage 4**: Add Distractions (Days 9-11)
+- **Stage 5**: Performance 30-60s (Days 12-14)
 
-### Change Default Lesson
-Edit `app.js`:
-```javascript
-const DEFAULT_LESSON = "your_lesson_id";
-```
+## 🆘 Troubleshooting
 
-### Disable Rewards
-Remove or hide `<div class="bubble-rewards">` in HTML.
+**Illustrations not showing?**
+- Check browser console (F12)
+- Canvas requires modern browser
+- Try Chrome/Firefox
 
-### Change Typing Speed
-Edit `app.js`:
-```javascript
-await sleep(14);  // Lower = faster typing
-```
+**Steps not advancing?**
+- Check JSON file loads correctly
+- Verify file paths
+- Check console for errors
 
-## 🐛 Troubleshooting
+**Layout broken on mobile?**
+- Clear browser cache
+- Try different browser
+- Check viewport meta tag
 
-**No sound?**
-- Click anywhere first (browsers require user interaction for audio)
-- Check browser volume
-- Try Chrome (best Web Audio support)
+## 💡 Tips
 
-**Images not loading?**
-- Check file paths in JSON
-- Verify images are uploaded
-- Check browser console for errors
-
-**Progress not saving?**
-- localStorage might be disabled
-- Check browser privacy settings
-- Try incognito/private mode
-
-**Level won't unlock?**
-- Click "Complete Level ✓" button on final step
-- Check console for JavaScript errors
-
-## 📄 License
-
-Template is provided as-is for educational use.
-Customize freely for your bird training academy!
-
-## 🆘 Support
-
-For template issues, check browser console (F12) for error messages.
+- Keep sessions short (5-10 minutes)
+- Use high-value treats
+- Practice same time daily
+- End on success
+- Be patient with progress
 
 ---
 
-**Created for The Amazonica Singapore - Bird Tricks Academy**
+**The Amazonica Singapore - Bird Tricks Academy**

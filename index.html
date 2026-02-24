@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bird Tricks Academy - Lesson Player</title>
+  <title>Bird Tricks Academy - Stay Command Training</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,12 +14,7 @@
         <div id="lessonTitle" class="brand-title">Bird Tricks Academy</div>
       </div>
       <div class="top-actions">
-        <select id="levelSelector" class="level-selector">
-          <option value="basic">Basic</option>
-          <option value="intermediate">Intermediate</option>
-          <option value="advanced">Advanced</option>
-        </select>
-        <button id="restartBtn" class="btn secondary" type="button">Restart Level</button>
+        <button id="restartBtn" class="btn secondary" type="button">Restart</button>
       </div>
     </header>
 
@@ -32,16 +27,7 @@
         <div class="companion">
           <div class="logo-wrap">
             <img id="companionImage" class="companion-image" src="rangerTaila.webp" alt="Ranger Taila" />
-            <div class="eyes-container" id="eyesContainer">
-              <div class="eye left-eye">
-                <div class="pupil"></div>
-              </div>
-              <div class="eye right-eye">
-                <div class="pupil"></div>
-              </div>
-            </div>
           </div>
-          <div class="bubble-rewards" id="bubbleRewards"></div>
         </div>
       </section>
 
@@ -59,13 +45,12 @@
           <div class="step-body">
             <div class="visual-container">
               <div class="visual-scroll">
-                <img id="stepImage" class="step-image hidden" src="" alt="Step illustration" />
-                <div id="imageStatus" class="image-status hidden"></div>
+                <canvas id="illustrationCanvas" width="600" height="400"></canvas>
               </div>
             </div>
 
             <div id="hintBox" class="hintbox hidden" aria-live="polite">
-              <div class="hintbox-title">Hint</div>
+              <div class="hintbox-title">💡 Tip</div>
               <div id="hintText" class="hintbox-text"></div>
             </div>
 
@@ -75,7 +60,6 @@
 
               <div class="spacer"></div>
 
-              <button id="completeBtn" class="btn success hidden" type="button">Complete Level ✓</button>
               <button id="nextBtn" class="btn primary" type="button">Next →</button>
             </div>
           </div>

@@ -1,0 +1,93 @@
+{
+  "title": "Stay Command Training",
+  "steps": [
+    {
+      "stage": 1,
+      "title": "🟢 Stage 1: Zero Duration (Days 1-2)",
+      "instruction": "📍 Place bird on training perch\n✋ Show open palm and say 'Stay'\n⏱️ Wait just 1 second\n🖱️ Click and treat WHILE bird is still in position\n🔓 Give release cue 'OK'\n🔁 Repeat 10-15 times per session",
+      "hint": "⚠️ Critical Timing Rule: Click WHILE the bird is still in position — not after it moves. Even a half-second delay teaches the bird that moving earns the reward."
+    },
+    {
+      "stage": 2,
+      "title": "🔵 Stage 2: Build Duration (Days 3-5) - 3 seconds",
+      "instruction": "✋ Give Stay cue\n⏱️ Count silently: 1... 2... 3...\n🖱️ Click at 3 seconds if bird hasn't moved\n🔓 Release with 'OK'\n📈 Progress: Build duration gradually",
+      "duration": "3 sec",
+      "hint": "✅ Progression Rule: Only move to longer duration when bird succeeds 4 out of 5 attempts at current level."
+    },
+    {
+      "stage": 2,
+      "title": "🔵 Stage 2: Build Duration - 5 seconds",
+      "instruction": "✋ Give Stay cue\n⏱️ Count silently: 1... 2... 3... 4... 5...\n🖱️ Click at 5 seconds if bird hasn't moved\n🔓 Release with 'OK'",
+      "duration": "5 sec",
+      "hint": "Great progress! Move to 8 seconds once bird succeeds 4 out of 5 times."
+    },
+    {
+      "stage": 2,
+      "title": "🔵 Stage 2: Build Duration - 8 seconds",
+      "instruction": "✋ Give Stay cue\n⏱️ Count silently: 1... 2... 3... 4... 5... 6... 7... 8...\n🖱️ Click at 8 seconds if bird hasn't moved\n🔓 Release with 'OK'",
+      "duration": "8 sec",
+      "hint": "Excellent! Next goal is 15 seconds. Take your time building up to it."
+    },
+    {
+      "stage": 2,
+      "title": "🔵 Stage 2: Build Duration - 15 seconds",
+      "instruction": "✋ Give Stay cue\n⏱️ Count silently to 15 seconds\n🖱️ Click at 15 seconds if bird hasn't moved\n🔓 Release with 'OK'\n🎉 Mastered duration! Ready for distance.",
+      "duration": "15 sec",
+      "hint": "Perfect! Once consistent at 15 seconds, you're ready for Stage 3."
+    },
+    {
+      "stage": 3,
+      "title": "🟣 Stage 3: Add Distance (Days 6-8) - 1 step",
+      "instruction": "✋ Give Stay cue\n🚶 Take ONE step back\n⏱️ Wait 5 seconds\n🔙 Return to bird (do NOT call bird to you)\n🖱️ Click and treat at perch\n🔓 Release with 'OK'",
+      "hint": "💡 Important: Always RETURN to bird to reward during Stay training. Calling bird to you teaches recall, not Stay."
+    },
+    {
+      "stage": 3,
+      "title": "🟣 Stage 3: Add Distance - 2 steps",
+      "instruction": "✋ Give Stay cue\n🚶 Take TWO steps back\n⏱️ Wait 5 seconds\n🔙 Return to bird\n🖱️ Click and treat at perch\n🔓 Release with 'OK'",
+      "hint": "Keep these two skills completely separate: Stay means 'wait here', Recall means 'come to me'."
+    },
+    {
+      "stage": 3,
+      "title": "🟣 Stage 3: Add Distance - Across the room",
+      "instruction": "✋ Give Stay cue\n🚶 Walk across the room (8-10 feet)\n⏱️ Wait 5 seconds\n🔙 Return to bird\n🖱️ Click and treat at perch\n🔓 Release with 'OK'\n🎉 Distance mastered!",
+      "hint": "Great work! Your bird now understands Stay means staying put no matter how far you go."
+    },
+    {
+      "stage": 4,
+      "title": "🟠 Stage 4: Add Distractions (Days 9-11) - Gentle arm wave",
+      "instruction": "✋ Give Stay cue\n🤚 Wave your arm gently while stepping back\n⏱️ Wait 5 seconds\n🔙 Return to bird\n🖱️ Click and treat for holding position\n🔓 Release with 'OK'",
+      "hint": "Start with subtle distractions. Gradually increase intensity as bird succeeds."
+    },
+    {
+      "stage": 4,
+      "title": "🟠 Stage 4: Add Distractions - Walking back and forth",
+      "instruction": "✋ Give Stay cue\n🚶 Walk back and forth in front of bird\n⏱️ Maintain Stay for 10 seconds\n🔙 Return to bird\n🖱️ Click and treat\n🔓 Release with 'OK'",
+      "hint": "Movement is a big distraction. If bird breaks Stay, reduce difficulty."
+    },
+    {
+      "stage": 4,
+      "title": "🟠 Stage 4: Add Distractions - Soft sounds",
+      "instruction": "✋ Give Stay cue\n🔊 Make soft sounds (clap, whistle, talk)\n🚶 Step away while making sounds\n⏱️ Wait 10 seconds\n🔙 Return to bird\n🖱️ Click and treat\n🔓 Release with 'OK'",
+      "hint": "📈 Increase distraction intensity gradually over sessions. Audio + visual distractions are advanced."
+    },
+    {
+      "stage": 5,
+      "title": "🔴 Stage 5: Performance Stay (Days 12-14) - 30 seconds",
+      "instruction": "✋ Give Stay cue\n🚶 Walk away, do something natural (turn around, pick up objects)\n⏱️ Stay away for 30 seconds\n🔙 Return calmly\n🎉 Click and give JACKPOT (3-5 treats)\n🔓 Release with 'OK'",
+      "hint": "Jackpot rewards tell the bird 'THIS was exceptional!' Use them for breakthrough moments."
+    },
+    {
+      "stage": 5,
+      "title": "🔴 Stage 5: Performance Stay - 45 seconds",
+      "instruction": "✋ Give Stay cue\n🚶 Walk away and engage in normal activity\n⏱️ Stay away for 45 seconds\n🔙 Return calmly\n🎉 Click and give JACKPOT (3-5 treats)\n🔓 Release with 'OK'",
+      "hint": "You're almost there! 60 seconds is the final goal."
+    },
+    {
+      "stage": 5,
+      "title": "🔴 Stage 5: Performance Stay - 60 seconds MASTERED!",
+      "instruction": "✋ Give Stay cue\n🚶 Walk away, do normal activities\n⏱️ Stay away for a full 60 seconds\n🔙 Return calmly\n🎉 Click and give JACKPOT (3-5 treats)\n🔓 Release with 'OK'\n\n🏆 CONGRATULATIONS! Your bird has mastered the Stay command!",
+      "hint": "🎉 You've completed Stay training! Practice regularly to maintain this skill. Your bird now has impulse control mastery!"
+    }
+  ]
+}
