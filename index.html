@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bird Tricks Academy - Lesson Player</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-kicker">THE AMAZONICA SINGAPORE</div>
+        <div id="lessonTitle" class="brand-title">Bird Tricks Academy</div>
+      </div>
+      <div class="top-actions">
+        <select id="levelSelector" class="level-selector">
+          <option value="basic">Basic</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+        <button id="restartBtn" class="btn secondary" type="button">Restart Level</button>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="left" id="leftPanel">
+        <div class="bubble" id="bubble">
+          <div class="bubble-text" id="bubbleText">Loading…</div>
+        </div>
+
+        <div class="companion">
+          <div class="logo-wrap">
+            <img id="companionImage" class="companion-image" src="rangerTaila.webp" alt="Ranger Taila" />
+            <div class="eyes-container" id="eyesContainer">
+              <div class="eye left-eye">
+                <div class="pupil"></div>
+              </div>
+              <div class="eye right-eye">
+                <div class="pupil"></div>
+              </div>
+            </div>
+          </div>
+          <div class="bubble-rewards" id="bubbleRewards"></div>
+        </div>
+      </section>
+
+      <section class="right">
+        <div class="progress-wrap">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-header">
+            <div id="stepPill" class="pill">Step</div>
+            <h2 id="stepTitle" class="step-title">Loading…</h2>
+          </div>
+
+          <div class="step-body">
+            <div class="visual-container">
+              <div class="visual-scroll">
+                <img id="stepImage" class="step-image hidden" src="" alt="Step illustration" />
+                <div id="imageStatus" class="image-status hidden"></div>
+              </div>
+            </div>
+
+            <div id="hintBox" class="hintbox hidden" aria-live="polite">
+              <div class="hintbox-title">Hint</div>
+              <div id="hintText" class="hintbox-text"></div>
+            </div>
+
+            <div class="controls">
+              <button id="backBtn" class="btn secondary" type="button">← Back</button>
+              <button id="hintBtn" class="btn secondary" type="button">Hint</button>
+
+              <div class="spacer"></div>
+
+              <button id="completeBtn" class="btn success hidden" type="button">Complete Level ✓</button>
+              <button id="nextBtn" class="btn primary" type="button">Next →</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

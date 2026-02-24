@@ -1,0 +1,93 @@
+{
+  "title": "Target Training - Touch a Stick",
+  "steps_basic": [
+    {
+      "title": "Prepare your target stick",
+      "instruction": "Get a chopstick, pencil, or any stick. This will be your target stick.",
+      "hint": "Any stick-like object works - even a pen!",
+      "image": ""
+    },
+    {
+      "title": "Show the stick to your bird",
+      "instruction": "Hold the stick near your bird (not touching). Let them see it and get curious.",
+      "hint": "Don't push it towards them - let them come to it naturally.",
+      "image": ""
+    },
+    {
+      "title": "Wait for curiosity",
+      "instruction": "When your bird looks at or moves toward the stick, say 'Good!' and give a treat.",
+      "hint": "Reward ANY interest in the stick, even just looking at it.",
+      "image": ""
+    },
+    {
+      "title": "Practice 5 times",
+      "instruction": "Repeat: show stick → bird shows interest → 'Good!' + treat. Do this 5 times.",
+      "hint": "Keep sessions short - birds learn better in small doses.",
+      "image": ""
+    }
+  ],
+  "steps_intermediate": [
+    {
+      "title": "Review Basic",
+      "instruction": "Make sure your bird is comfortable looking at the stick and getting treats.",
+      "hint": "If they're not interested, go back to Basic level.",
+      "image": ""
+    },
+    {
+      "title": "Wait for a beak touch",
+      "instruction": "Now only reward when your bird's BEAK touches the stick. Say 'Touch!' then 'Good!' + treat.",
+      "hint": "Be patient - they'll eventually touch it out of curiosity.",
+      "image": ""
+    },
+    {
+      "title": "Add the cue word",
+      "instruction": "Say 'Touch!' BEFORE presenting the stick. Bird touches → 'Good!' + treat.",
+      "hint": "The word 'Touch!' will become the command.",
+      "image": ""
+    },
+    {
+      "title": "Practice in different spots",
+      "instruction": "Move the stick to different positions - left, right, up, down. Say 'Touch!' each time.",
+      "hint": "This teaches them to touch the stick wherever it is.",
+      "image": ""
+    },
+    {
+      "title": "10 successful touches",
+      "instruction": "Practice until your bird reliably touches the stick 10 times in a row.",
+      "hint": "Celebrate each success! Birds love enthusiasm.",
+      "image": ""
+    }
+  ],
+  "steps_advanced": [
+    {
+      "title": "Review Intermediate",
+      "instruction": "Your bird should now touch the stick reliably when you say 'Touch!'",
+      "hint": "If not consistent, practice Intermediate level more.",
+      "image": ""
+    },
+    {
+      "title": "Fade the food lure",
+      "instruction": "Start rewarding only every OTHER successful touch. Keep praising verbally.",
+      "hint": "This teaches them to work for praise, not just treats.",
+      "image": ""
+    },
+    {
+      "title": "Add distance",
+      "instruction": "Hold the stick further away. Say 'Touch!' - bird should move to touch it.",
+      "hint": "Start with just a few inches further, then gradually increase.",
+      "image": ""
+    },
+    {
+      "title": "Combine with movement",
+      "instruction": "Move the stick slowly while saying 'Touch!' - bird should follow and touch it.",
+      "hint": "This is the foundation for 'follow' and 'come' commands!",
+      "image": ""
+    },
+    {
+      "title": "Master level test",
+      "instruction": "Can your bird touch the stick 15 times in different locations with only occasional treats?",
+      "hint": "If yes, congratulations! Your bird has mastered target training!",
+      "image": ""
+    }
+  ]
+}
